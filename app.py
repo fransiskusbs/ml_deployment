@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import pickle
 import pandas as pd
 import sys
+print('Python', sys.executable)
 
 app = FastAPI(title='Home Credit Prediction')
 
