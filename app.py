@@ -5,7 +5,7 @@ import pandas as pd
 app = FastAPI(title='Home Credit Prediction')
 
 def load_model():
-    with open('model_rf_v1.sav', 'rb') as file:
+    with open('model_rf_v2.sav', 'rb') as file:
         return pickle.load(file)
 
 @app.get("/")
