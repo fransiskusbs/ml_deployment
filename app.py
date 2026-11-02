@@ -4,7 +4,7 @@ import pandas as pd
 import sys
 print('Python', sys.executable)
 
-app = FastAPI(title='Home Credit Prediction')
+app = FastAPI(title='Home Credit Prediction', debug=True)
 
 def load_model():
     with open('model_rf_v2.sav', 'rb') as file:
